@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taguinod_mobprog/screens/home_screen.dart';
-import 'package:taguinod_mobprog/screens/newsfeed_screen.dart'; 
+import 'package:taguinod_mobprog/screens/newsfeed_screen.dart';
+import 'package:taguinod_mobprog/screens/notification_screen.dart'; 
 
 
 
@@ -21,15 +22,15 @@ class MainApp extends StatelessWidget {
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Facebook Replication',
+          title: 'KDA Social',
           initialRoute: '/home',
           routes: {
-            "/newsfeed": (context) => const NewsFeedScreen(),
-            "/home": (context) => const HomeScreen(),
+            "/newsfeed": (context) => const NewsfeedScreen(),
+            "/home": (context) => const Homescreen(),
+            "/notification": (context) => const NotificationScreen(),
           },
         );
       },
     );
   }
 }
-
